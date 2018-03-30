@@ -12,8 +12,6 @@ const produceDate = function (opt) {
     }
     articles.push(newAricleObject)
   }
-  return {
-    data: articles
-  }
+  return articles
 }
 Mock.mock('/news', /post|get/i, produceDate)

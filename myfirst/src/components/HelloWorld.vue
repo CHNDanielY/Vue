@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
     <h1></h1>
-    <h2 @click="setNewsApi
-    ">Essential Links</h2>
+    <li v-for="(value) in newsListShow" :key="value.name">{{value.date}}</li>
+    <h2>Essential Links</h2>
     <ul>
       <li>
         <a
@@ -92,17 +92,11 @@ export default {
       newsListShow: []
     }
   },
-  methods: {
-    setNewsApi: function () {
-      var _this = this
-      _this.axios.get('/news', 'type=top&key=123')
-        .then(res => {
-          console.log(res)
-          console.log(res.data)
-          _this.newsListShow = res.data.data
-          console.log(_this.newsListShow)
-        })
-    }
+  mounted: function () {
+    this.axios.get('/news').then(res => {
+      this.newsListShow = res.data
+      console.log(res)
+    })
   }
 }
 </script>
