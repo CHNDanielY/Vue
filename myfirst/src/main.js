@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import './mock/mock'
 import axios from '../node_modules/axios'
+import CoolTable from 'vue-Handsontable'
 
 Vue.prototype.axios = axios
 Vue.config.productionTip = false
@@ -14,6 +15,6 @@ new Vue({
   el: '#app',
   router,
   axios,
-  components: { App },
+  components: { App, CoolTable },
   template: '<App/>'
 })
