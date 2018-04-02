@@ -2,11 +2,16 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
-    <cool-table :data="data" :settings="{}"></cool-table>
+    <Header></Header>
+    
+      <echart></echart>
+    
   </div>
 </template>
 
 <script>
+import echart from './components/echars'
+import  Header from './pages/header'
 export default {
   name: 'App',
   data () {
@@ -18,6 +23,9 @@ export default {
         ['2010', 30, 15, 12, 13]
       ]
     }
+  },
+  components:{
+    Header, echart
   }
 }
 </script>
