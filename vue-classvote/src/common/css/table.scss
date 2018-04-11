@@ -1,0 +1,91 @@
+$themecolor: #005733;
+.table {
+	font-family: '锐字逼格';
+	color: $themecolor;
+	.title {
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		img {
+			margin-right: 8px;
+			width: 28px;
+			vertical-align: middle;
+		}
+	}
+	.resultlist-wrap {
+		padding: 0 15px;
+		position: relative;
+		.circle {
+			position: absolute;
+			top: 5px;
+			left: 16px;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			border: 1px solid $themecolor;
+			background-color: #fff;
+		}
+	}
+	.thead {
+		margin-top: 15px;
+		box-sizing: border-box;
+		display: flex;
+    padding-left: 15px;
+    margin-left: 5px;
+		background-color: $themecolor;
+		border-radius: 5px;
+		color: #fff;
+		div:nth-child(1) {
+			text-align: left;
+			flex: 2;
+		}
+		div:nth-child(2) {
+			flex: 1;
+			text-align: center;
+		}
+		div:nth-child(3) {
+			flex: 1;
+			text-align: center;
+		}
+		div:nth-child(4) {
+			flex: 1;
+			text-align: center;
+		}
+	}
+	.classlist-wrap {
+		position: relative;
+    // top: -5px;
+    padding: 0 5px;
+		.item {
+			box-sizing: border-box;
+			padding: 8px 0 8px 10px;
+			border-top: 1px solid $themecolor;
+			border-left: 3px solid $themecolor;
+			position: relative;
+			color: #595757;
+			.circle {
+				top: -4px;
+				left: -5px;
+				width: 6px;
+				height: 6px;
+			}
+			.item-content {
+				display: flex;
+				text-align: center;
+				.classname {
+					flex: 2;
+					text-align: left;
+				}
+				.zone {
+					flex: 1;
+				}
+				.score {
+					flex: 1;
+        }
+        .count {
+          flex: 1;
+        }
+			}
+		}
+	}
+}
