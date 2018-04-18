@@ -4,13 +4,13 @@
     <router-view/>
     <Header></Header>
     
-      <echart></echart>
+      <!-- <echart></echart> -->
     
   </div>
 </template>
 
 <script>
-import echart from './components/echars'
+// import echart from './components/echars'
 import  Header from './pages/header'
 export default {
   name: 'App',
@@ -25,7 +25,7 @@ export default {
     }
   },
   components:{
-    Header, echart
+    Header
   }
 }
 </script>

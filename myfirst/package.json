@@ -16,7 +16,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "echarts": "^4.0.4",
-    "element-ui": "^2.3.2",
+    "element-ui": "^2.3.4",
     "handsontable": "^0.38.1",
     "install": "^0.11.0",
     "mockjs": "^1.0.1-beta3",

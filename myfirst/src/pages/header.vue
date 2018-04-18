@@ -9,6 +9,7 @@
     <el-menu-item index="2-3" >选项3</el-menu-item>
   </el-submenu>
   <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+   <el-button>默认按钮</el-button>
   </el-menu>
 </template>
 <script>
